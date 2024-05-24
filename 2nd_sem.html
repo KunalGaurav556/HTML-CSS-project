@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-image: url(img/Extra/1600w-_Tcjok-d9b4.webp);
+        }
+        .first{
+            /* border: 2px solid red; */
+            display: flex;
+            height: 80%;
+            background-color: rgb(172, 245, 225);
+        }
+        .logo img{
+            height: 90%;
+            width: 30%;
+            margin: 0px 15%;
+        }
+        .home{
+            /* border: 2px solid green; */
+            width: 20%;
+            margin: 0px 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+           
+        }
+        .home a{
+            color: black;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: none;
+        }
+        .home a:hover{
+            color: white;
+            background-color: black;
+            /* padding: 2%; */
+            border-radius: 5px;
+        }
+        .sec{
+            background-color: rgb(239, 244, 244);
+            font-size: 20px;
+            text-align: center;
+        }
+        .main{
+            display: flex;
+        }
+        .phy{
+            display: flex;
+        }
+        .phy a{
+            border: 2px solid black;
+            width: 28%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5% 0%;
+            padding: 6%;
+            /* justify-content: space-between; */
+        }
+        .b a{
+            text-decoration: none;
+            /* margin: 10% 0px; */
+            padding: 4% 0px;
+            font-size: 21px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .b a:hover{
+            color: rgb(15, 110, 39);
+            box-shadow: 4px 4px;
+        }
+        #k{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #k img{
+            height: 100%;
+            width: 65%;
+        }
+        #k a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+            /* text-decoration: none; */
+        }
+        #l{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #l img{
+            height: 100%;
+            width: 65%;
+        }
+        #l a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #m{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #m img{
+            height: 100%;
+            width: 65%;
+        }
+        #m a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #n{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #n img{
+            height: 100%;
+            width: 65%;
+        }
+        #n a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #o{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #o img{
+            height: 100%;
+            width: 65%;
+        }
+        #o a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #p{
+            padding: 15%;
+        }
+        #q{
+            padding: 15%;
+        }
+        #r{
+            padding: 15%;
+        }
+        #s{
+            padding: 15%;
+        }
+        #t{
+            padding: 15%;
+        }
+        .bm a{
+            height: 10%;
+            width: 28.5%;
+            text-align: center;
+            text-decoration: none;
+            margin: 4.4% 0px;
+            padding: 4% 0px;
+            font-size: 21px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .bm a:hover{
+            color: rgb(15, 110, 39);
+            box-shadow: 4px 4px;
+        }
+        #km{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #km img{
+            height: 100%;
+            width: 65%;
+        }
+        #km a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+            /* text-decoration: none; */
+        }
+        #lm{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #lm img{
+            height: 100%;
+            width: 65%;
+        }
+        #lm a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #mm{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #mm img{
+            height: 100%;
+            width: 65%;
+        }
+        #mm a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #nm{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #nm img{
+            height: 100%;
+            width: 65%;
+        }
+        #nm a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #om{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #om img{
+            height: 100%;
+            width: 65%;
+        }
+        #om a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #pm{
+            padding: 15%;
+        }
+        #qm{
+            padding: 15%;
+        }
+        #rm{
+            padding: 15%;
+        }
+        #sm{
+            padding: 15%;
+        }
+        #tm{
+            padding: 15%;
+        }
+        .be a{
+            height: 10%;
+            width: 28.5%;
+            text-align: center;
+            text-decoration: none;
+            margin: 4.4% 0px;
+            padding: 4% 0px;
+            font-size: 21px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .be a:hover{
+            color: rgb(15, 110, 39);
+            box-shadow: 4px 4px;
+        }
+        #ke{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #ke img{
+            height: 100%;
+            width: 65%;
+        }
+        #ke a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+            /* text-decoration: none; */
+        }
+        #le{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #le img{
+            height: 100%;
+            width: 65%;
+        }
+        #le a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #me{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #me img{
+            height: 100%;
+            width: 65%;
+        }
+        #me a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #ne{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #ne img{
+            height: 100%;
+            width: 65%;
+        }
+        #ne a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #oe{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #oe img{
+            height: 100%;
+            width: 65%;
+        }
+        #oe a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #pe{
+            padding: 15%;
+        }
+        #qe{
+            padding: 15%;
+        }
+        #re{
+            padding: 15%;
+        }
+        #se{
+            padding: 15%;
+        }
+        #te{
+            padding: 15%;
+        }
+        .bgd a{
+            height: 10%;
+            width: 28.5%;
+            text-align: center;
+            text-decoration: none;
+            margin: 4.4% 0px;
+            padding: 4% 0px;
+            font-size: 21px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .bgd a:hover{
+            color: rgb(15, 110, 39);
+            box-shadow: 4px 4px;
+        }
+        #kgd{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #kgd img{
+            height: 100%;
+            width: 65%;
+        }
+        #kgd a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+            /* text-decoration: none; */
+        }
+        #lgd{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #lgd img{
+            height: 100%;
+            width: 65%;
+        }
+        #lgd a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #mgd{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #mgd img{
+            height: 100%;
+            width: 65%;
+        }
+        #mgd a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #ngd{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #ngd img{
+            height: 100%;
+            width: 65%;
+        }
+        #ngd a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #ogd{
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        #ogd img{
+            height: 100%;
+            width: 65%;
+        }
+        #ogd a{
+            margin: 10% 0%;
+            /* height: 40%; */
+            /* width: 10%; */
+        }
+        #pgd{
+            padding: 15%;
+        }
+        #qgd{
+            padding: 15%;
+        }
+        #rgd{
+            padding: 15%;
+        }
+        #sgd{
+            padding: 15%;
+        }
+        #tgd{
+            padding: 15%;
+        }
+        .phys{
+            color: red;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .math{
+            color: red;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .bee{
+            color: red;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .EGD{
+            color: red;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="logo"><img src="img/Extra/logo.png" alt=""></div>
+        <div class="home">
+            <div class="h"><a href="CSE_Q.bank.html">HOME</a></div>
+            <div class="mst"><a href="2nd_sem_mst-paper.html">MST-PAPERS</a></div>
+        </div>
+    </div>
+    <div class="sec"><pre>This is University Semester Question Papers</pre></div>
+    <div class="main">
+        <div class="phy">
+            <div class="phys">MATHEMATICS-2
+                <div class="b"><a id="k" href=""><img id="p" src="img/Extra/pdf.png" alt="">2018</a></div>
+                <div class="b"><a id="l" href=""><img id="q" src="img/Extra/pdf.png" alt="">2019</a></div>
+                <div class="b"><a id="m" href=""><img id="r" src="img/Extra/pdf.png" alt="">2020</a></div>
+                <div class="b"><a id="n" href=""><img id="s" src="img/Extra/pdf.png" alt="">2021</a></div>
+                <div class="b"><a id="o" href=""><img id="t" src="img/Extra/pdf.png" alt="">2022</a></div>
+            </div>
+        </div>
+        <div class="math">PPS
+            <div class="bm"><a id="km" href=""><img id="pm" src="img/Extra/pdf.png" alt=""> 2018</a></div>
+            <div class="bm"><a id="lm" href=""><img id="qm" src="img/Extra/pdf.png" alt=""> 2019</a></div>
+            <div class="bm"><a id="nm" href=""><img id="rm" src="img/Extra/pdf.png" alt=""> 2020</a></div>
+            <div class="bm"><a id="mm" href=""><img id="sm" src="img/Extra/pdf.png" alt=""> 2021</a></div>
+            <div class="bm"><a id="om" href=""><img id="tm" src="img/Extra/pdf.png" alt=""> 2022</a></div>
+        </div>
+        <div class="bee">CHEMISTRY
+            <div class="be"><a id="ke" href=""><img id="pe" src="img/Extra/pdf.png" alt=""> 2018</a></div>
+            <div class="be"><a id="le" href=""><img id="qe" src="img/Extra/pdf.png" alt=""> 2019</a></div>
+            <div class="be"><a id="ne" href=""><img id="re" src="img/Extra/pdf.png" alt=""> 2020</a></div>
+            <div class="be"><a id="me" href=""><img id="se" src="img/Extra/pdf.png" alt=""> 2021</a></div>
+            <div class="be"><a id="oe" href=""><img id="te" src="img/Extra/pdf.png" alt=""> 2022</a></div>
+        </div>
+        <div class="EGD">ENGLISH
+            <div class="bgd"><a id="kgd" href=""><img id="pgd" src="img/Extra/pdf.png" alt=""> 2018</a></div>
+            <div class="bgd"><a id="lgd" href=""><img id="qgd" src="img/Extra/pdf.png" alt=""> 2019</a></div>
+            <div class="bgd"><a id="ngd" href=""><img id="rgd" src="img/Extra/pdf.png" alt=""> 2020</a></div>
+            <div class="bgd"><a id="mgd" href=""><img id="sgd" src="img/Extra/pdf.png" alt=""> 2021</a></div>
+            <div class="bgd"><a id="ogd" href=""><img id="tgd" src="img/Extra/pdf.png" alt=""> 2022</a></div>
+        </div>
+    </div>
+</body>
+</html>

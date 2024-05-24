@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: rgb(198, 198, 131);
+        height:100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        background-color: black;
+        border-radius: 15px;
+        border: 1px solid black;
+        box-shadow: 5px 5px blueviolet;
+        display: flex;
+        justify-content: center;
+        /* justify-content: space-around; */
+        align-items: center;
+        padding: 0px 45px;
+    }
+    .up{
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 0;
+    }
+    .input{
+       padding: 20px 0;
+    }
+    .down{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+    #SignIn-Button{
+        width: 150px;
+        padding: 3px 0;
+        margin: 15px 0;
+    }
+    #Create{
+        padding: 3px 0;
+        margin: 8px 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+        color: blue;
+    }
+    #Create:hover{
+        text-decoration: none;
+    }
+    #forgot{
+        padding: 3px 0;
+        margin: 8px 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+        color: blue;
+    }
+    #forgot:hover{
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="container">
+        <pre>This page is for Admin Only</pre>
+       <div class="main">
+        <div class="up">
+            <div class="login-page">
+                <div class="input">
+                    <input id="pass" type="text" placeholder="Enter username">
+                </div>
+                <div class="pass">
+                    <input id="pass" type="password" placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="down">
+                <div class="button">
+                    <button id="SignIn-Button">Sign In</button>
+                </div>
+                <a id="Create" href="">Create New Account </a>
+                <a id="forgot" href="">Forgot Password</a>
+            </div>
+       </div>
+       </div>
+    </div>
+</body>
+</html>

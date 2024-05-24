@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+       
+        .heading{
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 4rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            color: red;
+        }
+        .nav{
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(163, 170, 194);
+            height: 40px;
+            margin: 3px 0px;
+        }
+        .navb{
+            display: flex;
+            /* border: 2px solid red; */
+           justify-content: space-around;
+           width: 650px;
+        }
+        .navb a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .navb a:hover{
+            background-color: red;
+            box-shadow: 5px 5px;
+        }
+        .pre{
+            font-size: 20px;
+            background-color: rgb(2, 185, 185);;
+        }
+        .left{
+            /* border:2px solid black; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 40px;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(19, 67, 19);
+        }
+        .img{
+            /* border: 2px solid green; */
+        }
+        .img img{
+            height: 738px;
+        }
+        .mid{
+            /* border: 2px solid red; */
+            display: flex;
+           background-color: rgb(254, 251, 251);
+            justify-content: center;
+            justify-content: space-around;
+            height: 730px;
+        }
+        .upload{
+            /* border: 2px solid black; */
+            text-align: center;
+            width: 15rem;
+            /* background-color: red; */
+            background-color:rgb(252, 231, 2);
+            box-shadow: 5px 5px;
+            
+        }
+       .upload a{
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+       }
+       .upload a:hover{
+        /* color: rgb(252, 231, 2); */
+        /* background-color: red; */
+        color: rgb(4, 0, 255);
+       }
+
+
+       /* MEDIA QUERY FOR MOBILE PHONE */
+       body{
+        margin: 0;
+        padding: 0;
+       }
+       @media(max-width:350px){
+        .heading{
+            background-color: green;
+            /* width: 400%; */
+            height: auto;
+        }
+        #heading{
+            padding: 0px 5px;
+        }
+        .navb{
+            display: none;
+        }
+        #img{
+            width: 100%;
+        }
+        .option{
+            display: none;
+            position: fixed;
+        }
+        .branches a{
+            color: yellow;
+            text-decoration: none;
+        }
+        .branches a:hover{
+            border-bottom: 1px dotted yellow;
+        }
+        .branches{
+            padding: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+        }
+        .more-option{
+            background-color: yellow;
+            padding: 6px;
+            /* width: 300%; */
+            border: 1px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .change{
+            background-color: black;
+            height: auto;
+            width: auto;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .left{
+            background-color: pink;
+        }
+        .pre{
+            background-color: aqua;
+        }
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="heading"><h1 id="heading">GET ALL SUBJECT'S NOTES OF ALL BRANCHES </h1></div>
+    <div class="nav">
+    <div class="navb">
+        <div><a href="civil.html">Civil</a></div>
+        <div><a href="#">Cse</a></div>
+        <div><a href="#">Mechanical</a></div>
+        <div><a href="#">Electrical</a></div>
+        <div><a href="#">Electronics</a></div>
+    </div>
+
+    <div class="hmg-1">
+        <div class="more-option" onclick="OnClickMenu()">CLICK HERE TO SELECT YOUR BRANCHES</div>
+            <div class="option" id="option">
+                <div class="branches"><a href="civil.html">Civil</a></div>
+                <div class="branches"><a href="#">Cse</a></div>
+                <div class="branches"><a href="#">Mechanical</a></div>
+                <div class="branches"><a href="#">Electrical</a></div>
+                <div class="branches"><a href="#">Electronics</a></div>
+           </div>
+        </div>
+    </div>
+
+    <div class="pre"><pre>This website uplaoad all notes as possible as.</pre></div>
+
+    <div class="mid">
+        <div class="left">Download the best notes of your subject that notes are according to your Syllabus. <br>
+            This websites upload the all notes as possible as <br> because these notes that are taken by college student. <br>
+            These notes are according to Syllabus.
+            <ul>
+                <li>
+                    These notes will helpful for your  MST and end semester exam.
+                </li>
+                <li>
+                    These notes are made by semester passout student.
+                </li>
+            </ul>
+            <div class="last">
+                <div class="info">You can also upload your notes.After research and verify that will appear publically.</div>
+                <div class="upload"><a href="#">Upload Your notes here</a></div>
+            </div>
+    </div>
+    <div class="img"><img id="img" src="img/Notes/cute.webp" alt=""></div>
+    </div>
+    
+<!-- JAVASCRIPT -->
+
+    <script>
+        function OnClickMenu(){
+            document.getElementById('option').classList.toggle('change');
+        }
+    </script>
+
+</body>
+</html>

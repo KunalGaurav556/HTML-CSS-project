@@ -1,0 +1,362 @@
+$(document).ready(function() {
+
+    $('.venobox').venobox(); 
+
+    $("#slider").owlCarousel({
+    		autoplay: true,
+        autoplayTimeout:7000,
+        autoplaySpeed:900,
+        dots:false,
+        loop:true,
+        margin:0,
+        nav:true,
+        navSpeed:900,
+        navText:['<img src="'+site_url+'/images/left_arrow.png" />','<img src="'+site_url+'/images/right_arrow.png" />'],
+        items:1,
+        animateOut: 'fadeOut',
+        responsiveClass:true
+
+    });
+    
+    $("#video").owlCarousel({
+        autoplay: true,
+        autoplayTimeout:7000,
+        autoplaySpeed:900,
+        dots:false,
+        loop:true,
+        margin:0,
+        nav:true,
+        navSpeed:900,
+        navText:['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        items:1,
+        animateOut: 'fadeOut',
+        responsiveClass:true
+
+    });
+
+     $('.marquee').marquee({
+          duration: 15000,
+          gap: 10,
+          delayBeforeStart: 0,
+          direction: 'up',
+          duplicated: false,
+          pauseOnHover: true,
+      });
+
+    $("#news").owlCarousel({
+        autoplay: true,
+        autoplayTimeout:7000,
+        autoplaySpeed:900,
+        dots:false,
+        loop:true,
+        margin:0,
+        nav:true,
+        navSpeed:900,
+        navText:['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        items:1,
+        responsiveClass:true
+
+    });
+    $("#caroufredsel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout:6000,
+        autoplaySpeed:900,
+        dots:false,
+        loop:true,
+        margin:10,
+        nav:true,
+        navSpeed:900,
+        navText:['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        responsiveClass:true,
+        responsive : {
+          0 : {
+              items:1,
+          },
+          768 : {
+             items:3,
+          },
+          1024 : {
+             items:4,
+          },
+          1600 : {
+              items:5,
+          }
+      }
+
+    });
+
+
+
+     $(".academicCircular").owlCarousel({
+        autoplay: true,
+        autoplayTimeout:6000,
+        autoplaySpeed:900,
+        dots:false,
+        loop:true,
+        margin:0,
+        nav:true,
+        navSpeed:900,
+        navText:['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        responsiveClass:true,
+        items:1
+
+    });
+
+    $('.parallax-window').parallax();
+   
+     // Mobile Menu
+
+      $('#menu').slicknav({
+        	label: '',
+        	duration: 300,
+        	prependTo: '#mobileMenu',
+        	allowParentLinks: true,
+       });
+
+
+       // Dropdown menu  
+          
+        var mouseIN = function(){
+          $(this).find('>ul').slideDown(300);
+           $(this).addClass('hover');
+        };
+        var mouseOUT = function(){
+          $(this).find('>ul').slideUp(300);
+           $(this).removeClass('hover');
+        }
+        
+        $('nav#main-navigation ul li:has(>ul)').hoverIntent({
+          over: mouseIN,
+          out: mouseOUT,
+          timeout:600
+        });
+
+        //Slide toggle newsletter form in sidebar
+
+    $(".newsletter-form .newsForm").hide();
+    $(".newsletter-form span").click(function(event) {
+        $(".newsletter-form .newsForm").slideToggle(400);
+    }); 
+
+
+     menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+        showRightPush = document.getElementById( 'showRightPush' ),
+        closePush = document.getElementById( 'closePush' ),
+        body = document.body;
+
+
+        showRightPush.onclick = function() {
+          classie.toggle( this, 'active' );
+          classie.toggle( body, 'cbp-spmenu-push-toleft' );
+          classie.toggle( menuRight, 'cbp-spmenu-open' );        
+        };
+        closePush.onclick = function() {
+          classie.toggle( this, 'active' );
+          classie.toggle( body, 'cbp-spmenu-push-toleft' );
+          classie.toggle( menuRight, 'cbp-spmenu-open' );        
+        };
+
+
+ // Accordion with toggle section.
+      $("#toggle_accordion").bwlAccordion({
+          toggle: true,
+          closeall: true,
+      });
+
+      $("#exp_coll_btn_accordion").bwlAccordion({
+        closeall: true,
+        toggle: true,
+      });
+
+
+
+       // Sidebar Menu
+
+  $('#sidebarMenu li.menu-item-has-children >a').on('click', function(){
+    $(this).removeAttr('href');
+    var element = $(this).parent('li');
+    if (element.hasClass('open')) {
+      element.removeClass('open');
+      element.find('li').removeClass('open');
+      element.find('ul').slideUp();
+    }
+    else {
+      element.addClass('open');
+      element.children('ul').slideDown();
+      element.siblings('li').children('ul').slideUp();
+      element.siblings('li').removeClass('open');
+      element.siblings('li').find('li').removeClass('open');
+      element.siblings('li').find('ul').slideUp();
+    }
+  });
+
+  if ( $(window).outerWidth() > 767 ) {
+
+    $(".sidebarMenu").stick_in_parent({
+        offset_top: 200,
+        spacer: false,
+    });
+  }
+
+
+ /* $(".event-wrap").bootstrapNews({
+      newsPerPage: 5,
+      autoplay: true,
+      pauseOnHover:true,
+      direction: 'up',
+      newsTickerInterval: 4000,
+      onToDo: function () {
+          //console.log(this);
+      }
+  });*/
+
+   $('video, audio').mediaelementplayer({
+        // Configuration
+        success: function(media) {
+                var isNative = media.rendererName.match(/html5|native/);
+                
+                var isYoutube = media.rendererName.match(/youtube/);
+                
+                // etc.
+        }
+    });
+            
+});
+
+
+(function ($) {
+$.fn.vAlign = function() {
+  return this.each(function(i){
+  var h = $(this).height();
+  var oh = $(this).outerHeight();
+  var mt = (h + (oh - h)) / 2;  
+  $(this).css("margin-top", "-" + mt + "px"); 
+  $(this).css("top", "60%");
+  }); 
+};
+$.fn.vAlign2 = function() {
+  return this.each(function(i){
+  var h = $(this).height();
+  var oh = $(this).outerHeight();
+  var mt = (h + (oh - h)) / 2;  
+  $(this).css("margin-top", "-" + mt + "px"); 
+  $(this).css("top", "50%");
+  }); 
+};
+$.fn.vAlign3 = function() {
+  return this.each(function(i){
+  var h = $(this).height();
+  var oh = $(this).outerHeight();
+  var mt = (h + (oh - h)) / 2;  
+  $(this).css("margin-top", "-" + mt + "px"); 
+  $(this).css("top", "25%");
+  }); 
+};
+$.fn.toggleClick = function(){
+    var functions = arguments ;
+    return this.click(function(){
+            var iteration = $(this).data('iteration') || 0;
+            functions[iteration].apply(this, arguments);
+            iteration = (iteration + 1) % functions.length ;
+            $(this).data('iteration', iteration);
+    });
+};
+})(jQuery);
+$(window).load(function() {
+  //cache
+  $img_control = $("#mrova-img-control");
+  
+ $( "#mrova-close-control" ).click(function() {
+    $img_control.trigger('click');
+  });
+
+  $mrova_feedback = $('#mrova-feedback');
+  $mrova_contactform = $('#mrova-contactform');
+
+  //setback to block state and vertical align to center
+  $mrova_feedback.vAlign()
+  .css({'display':'block','height':$mrova_feedback.outerHeight()});
+  //Aligning feedback button to center with the parent div 
+
+  $img_control.vAlign()
+  //animate the form
+  .toggleClick(function(){
+    $mrova_feedback.animate({'right':'-2px'},1000);
+    $mrova_feedback.addClass('active');
+  }, function(){
+    $mrova_feedback.animate({'right':'-'+$mrova_feedback.outerWidth()},1000);
+    $mrova_feedback.removeClass('active');
+  });
+
+
+  //application Form
+  $app_img_control = $("#app-img-control");
+  
+ $( "#app-close-control" ).click(function() {
+    $app_img_control.trigger('click');
+  });
+
+  $app_feedback = $('#app-feedback');
+  $app_contactform = $('#app-contactform');
+
+  //setback to block state and vertical align to center
+  $app_feedback.vAlign2()
+  .css({'display':'block','height':$app_feedback.outerHeight()});
+  //Aligning feedback button to center with the parent div 
+
+  $app_img_control.vAlign2()
+  //animate the form
+  .toggleClick(function(){
+    $app_feedback.animate({'left':'-2px'},1000);
+    $app_feedback.addClass('active');
+  }, function(){
+    $app_feedback.animate({'left':'-'+$app_feedback.outerWidth()},1000);
+    $app_feedback.removeClass('active');
+  });
+
+
+  $sre_feedback = $('#sre-feedback');
+  $sre_feedback.vAlign3()
+
+});
+
+jQuery( document ).ready( function() {
+  // init Isotope
+  var $container = jQuery('.isotope').isotope({
+    itemSelector: '.item',
+    layoutMode: 'fitRows',
+  });
+
+  // filter functions
+  var filterFns = {
+   
+    // show if name ends with -ium
+    ium: function() {
+      var name = jQuery(this).find('.name').text();
+      return name.match( /ium$/ );
+    }
+  };
+
+  // bind filter button click
+  jQuery('#filters').on( 'click', 'button', function() {
+    var filterValue = jQuery( this ).attr('data-filter');
+    // use filterFn if matches value
+    filterValue = filterFns[ filterValue ] || filterValue;
+    $container.isotope({ filter: filterValue });
+  });
+   // change is-checked class on buttons
+  jQuery('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = jQuery( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      jQuery( this ).addClass('is-checked');
+    });
+  });
+ $(".tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix"), 
+ $(".tabs li").removeClass("ui-corner-top").addClass("ui-corner-left")
+        
+  
+});
+
+
+        
